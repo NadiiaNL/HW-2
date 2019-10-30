@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2_HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+        <header>
+            <h1 class="header">Домашнє завдання #2_HTML</h1>
+        </header>
+        <main>
+           <!--==================Create table==================-->
+            <section class = "section_table section">
+                 <h4 class="section_header">Створення таблиці</h4>
+               <table>
+                 <caption>Контактні дані</caption>
+                  <thead>
+                        <tr>
+                           <th scope = "col">Ім'я</th>
+                           <th scope = "col">Прізвище</th>
+                           <th scope = "col">Телефон</th>
+                           <th scope = "col">E-mail</th>
+                       </tr>
+                   </thead>
+                <tbody>
+                       <tr>
+                           <td>Надія</td>
+                           <td>Кожушко</td>
+                           <td>0964858975</td>
+                           <td>kozh6751@gmail.com</td>
+                       </tr>
+                       <tr>
+                           <td>Любов</td>
+                           <td>Кукурік</td>
+                           <td>0504878598</td>
+                           <td>rt45@ukr.net</td>
+                       </tr>
+                       <tr>
+                           <td>Сергій</td>
+                           <td>Думич</td>
+                           <td>0934578953</td>
+                           <td>dymuch@ukr.net</td>
+                       </tr>
+                       <tr>
+                           <td>Ярослав</td>
+                           <td>Кушнір</td>
+                           <td>0502655469</td>
+                           <td>kushnirt@ukr.net</td>
+                       </tr>
+                   </tbody>
+               </table>  
+            </section>
+            <!--=======================Create form=========================-->
+            <section class = "section_form section">
+                 <h4 class="section_header">Створення форми</h4>
+              <form method = "POST">
+                <fieldset>
+                   <legend>Контактні дані</legend>
+                    <div>
+                        <input type="text" id = "firstName" name = "first_name" placeholder = "Введіть Ваше ім'я" tabindex = "1">
+                    </div>
+                    <div>
+                        <input type="text" id = "lastName" name = "last_name" placeholder = "Введіть Ваше прізвище" tabindex = "2">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Ваша стать?</legend>    
+                    <div>
+                        <input type="radio" id = "male" name = "sex" value = "male"><label for="male">М</label>
+                    </div>
+                    <div>
+                        <input type="radio" id = "female" name = "sex" value = "female" checked><label for="female">Ж</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Питання</legend>
+                    <div>
+                        <textarea placeholder = "Напишіть Ваше питання" cols = "21" rows = "6" name = "question"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Місце проживання</legend>
+                    <div>
+                        <select name="town">
+                            <option disabled selected>Виберіть Ваше місто</option>
+                            <option value="Lviv">Львів</option>
+                            <option value="Odessa">Одеса</option>
+                            <option value="Kharkiv">Харків</option>
+                            <option value="Kiev">Київ</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Вибір мови</legend>
+                         <div>
+                             <input type="checkbox" id = "ua" name = "languages" value = "ua"><label for="ua">Українська</label>
+                         </div>
+                        <div>
+                             <input type="checkbox" id = "ru" name = "languages" value = "ru"><label for="ru">Російська</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id = "en" name = "languages" value = "en"><label for="en">Англійська</label>
+                        </div>
+                </fieldset>
+                <div>
+                    <button type = "submit">Відправити</button>
+                </div>
+              </form>
+            </section>
+        </main>
+        <footer><span>&copy; Copyright 2019 by KN &#x263A;</span></footer>
+    </div>
+</body>
+</html>
